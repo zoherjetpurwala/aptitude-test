@@ -49,6 +49,9 @@ export async function connectToDatabase() {
       db: connection.connection.db,
       client: connection.connection.client,
     };
+
+    console.log("Connected to MongoDB successfully.");
+
     return cachedConnection;
   } catch (error) {
     console.error("Failed to connect to the database:", error);
