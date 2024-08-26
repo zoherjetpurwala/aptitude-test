@@ -1,6 +1,6 @@
 import React from "react"
 import { SidebarLeft } from "iconsax-react"
-import { useCentralStore } from "@/utils/StateUtils"
+import { useCentralStore } from "@/lib/StateUtils"
 
 const PageNavbarLeftContent = React.forwardRef((props, ref) => (
   <div

@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id           String        @id @default(cuid())
+  email        String        @unique
+  password     String
+  name         String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  payments     Payment[]
+  studentExams StudentExam[]
+}
+
+model Exam {
+  id           String        @id @default(cuid())
+  title        String
+  description  String?
+  duration     Int // Duration in minutes
+  price        Float // Price for the exam
+  questions    Question[]
+  studentExams StudentExam[]
+  payments     Payment[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Payment {
+  id        String   @id @default(cuid())
+  amount    Float
+  createdAt DateTime @default(now())
+  userId    String
+  examId    String
+  user      User     @relation(fields: [userId], references: [id])
+  exam      Exam     @relation(fields: [examId], references: [id])
+}
+
+model Question {
+  id             String          @id @default(cuid())
+  text           String
+  examId         String
+  exam           Exam            @relation(fields: [examId], references: [id])
+  answers        Answer[]
+  studentAnswers StudentAnswer[]
+}
+
+model Answer {
+  id         String   @id @default(cuid())
+  text       String
+  isCorrect  Boolean
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+}
+
+model StudentExam {
+  id          String          @id @default(cuid())
+  startedAt   DateTime
+  completedAt DateTime?
+  userId      String
+  examId      String
+  user        User            @relation(fields: [userId], references: [id])
+  exam        Exam            @relation(fields: [examId], references: [id])
+  answers     StudentAnswer[] // One-to-many relation
+  result      Result?
+}
+
+model StudentAnswer {
+  id             String      @id @default(cuid())
+  studentExamId  String
+  questionId     String
+  selectedAnswer String // Store the selected answer's id
+  studentExam    StudentExam @relation(fields: [studentExamId], references: [id])
+  question       Question    @relation(fields: [questionId], references: [id])
+}
+
+model Result {
+  id            String      @id @default(cuid())
+  score         Float
+  studentExam   StudentExam @relation(fields: [studentExamId], references: [id])
+  studentExamId String      @unique
+}

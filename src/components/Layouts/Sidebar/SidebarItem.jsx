@@ -1,7 +1,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link"
-import { useCentralStore } from "@/utils/StateUtils";
+import { useCentralStore } from "@/lib/StateUtils";
 
 
 const SidebarItem = (props) => {

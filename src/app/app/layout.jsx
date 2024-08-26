@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarLayout from "@/components/Layouts/Sidebar/SidebarLayout";
-import { useCentralStore } from "@/utils/StateUtils";
+import { useCentralStore } from "@/lib/StateUtils";
 
 const AppLayout = ({ children }) => {
   const { isSidebarOpen, setIsSidebarOpen } = useCentralStore();
@@ -40,7 +40,7 @@ const AppLayout = ({ children }) => {
         )}
       </AnimatePresence>
 
-      <div className="grid md:grid-cols-[300px_1fr] w-screen overflow-x-hidden">
+      <div className="grid md:grid-cols-[300px_1fr] w-full overflow-x-hidden">
         <div className="hidden md:block">
           <SidebarLayout />
         </div>

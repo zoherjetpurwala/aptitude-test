@@ -1,0 +1,199 @@
+[
+    {
+      "title": "Mathematics - Basic Algebra",
+      "description": "An introductory exam on basic algebra concepts.",
+      "duration": 90,
+      "price": 10.00,
+      "questions": [
+        {
+          "text": "What is the value of x if 2x + 3 = 11?",
+          "answers": [
+            {"text": "4", "isCorrect": true},
+            {"text": "2", "isCorrect": false},
+            {"text": "5", "isCorrect": false},
+            {"text": "3", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the value of y if y - 3 = 5?",
+          "answers": [
+            {"text": "8", "isCorrect": true},
+            {"text": "2", "isCorrect": false},
+            {"text": "5", "isCorrect": false},
+            {"text": "10", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Simplify: 3(2x - 4) = ?",
+          "answers": [
+            {"text": "6x - 12", "isCorrect": true},
+            {"text": "6x + 12", "isCorrect": false},
+            {"text": "2x - 4", "isCorrect": false},
+            {"text": "6x - 8", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Solve for z: 5z = 20",
+          "answers": [
+            {"text": "4", "isCorrect": true},
+            {"text": "5", "isCorrect": false},
+            {"text": "2", "isCorrect": false},
+            {"text": "6", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the value of a in the equation 3a + 2 = 11?",
+          "answers": [
+            {"text": "3", "isCorrect": true},
+            {"text": "2", "isCorrect": false},
+            {"text": "4", "isCorrect": false},
+            {"text": "5", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Solve: x/2 = 8",
+          "answers": [
+            {"text": "16", "isCorrect": true},
+            {"text": "4", "isCorrect": false},
+            {"text": "8", "isCorrect": false},
+            {"text": "2", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "If 3x = 15, what is x?",
+          "answers": [
+            {"text": "5", "isCorrect": true},
+            {"text": "4", "isCorrect": false},
+            {"text": "3", "isCorrect": false},
+            {"text": "6", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the solution to 2(x - 3) = 4?",
+          "answers": [
+            {"text": "x = 5", "isCorrect": true},
+            {"text": "x = 6", "isCorrect": false},
+            {"text": "x = 4", "isCorrect": false},
+            {"text": "x = 3", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Simplify: 7x - 2x = ?",
+          "answers": [
+            {"text": "5x", "isCorrect": true},
+            {"text": "9x", "isCorrect": false},
+            {"text": "6x", "isCorrect": false},
+            {"text": "7x", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Solve for x: x + 3 = 10",
+          "answers": [
+            {"text": "7", "isCorrect": true},
+            {"text": "3", "isCorrect": false},
+            {"text": "10", "isCorrect": false},
+            {"text": "6", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Physics - Basic Mechanics",
+      "description": "An introductory exam on basic mechanics concepts.",
+      "duration": 120,
+      "price": 12.00,
+      "questions": [
+        {
+          "text": "What is the acceleration due to gravity on Earth?",
+          "answers": [
+            {"text": "9.8 m/s^2", "isCorrect": true},
+            {"text": "10 m/s^2", "isCorrect": false},
+            {"text": "8.9 m/s^2", "isCorrect": false},
+            {"text": "9.0 m/s^2", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is Newton's second law of motion?",
+          "answers": [
+            {"text": "Force = mass × acceleration", "isCorrect": true},
+            {"text": "Every action has an equal and opposite reaction", "isCorrect": false},
+            {"text": "An object in motion stays in motion", "isCorrect": false},
+            {"text": "Energy cannot be created or destroyed", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the unit of force in the SI system?",
+          "answers": [
+            {"text": "Newton", "isCorrect": true},
+            {"text": "Joule", "isCorrect": false},
+            {"text": "Pascal", "isCorrect": false},
+            {"text": "Watt", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "If a car accelerates from rest to 60 m/s in 10 seconds, what is its acceleration?",
+          "answers": [
+            {"text": "6 m/s^2", "isCorrect": true},
+            {"text": "10 m/s^2", "isCorrect": false},
+            {"text": "5 m/s^2", "isCorrect": false},
+            {"text": "7 m/s^2", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the force required to accelerate a 10 kg object at 2 m/s^2?",
+          "answers": [
+            {"text": "20 N", "isCorrect": true},
+            {"text": "10 N", "isCorrect": false},
+            {"text": "15 N", "isCorrect": false},
+            {"text": "25 N", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the work done by a force of 10 N moving an object 2 meters?",
+          "answers": [
+            {"text": "20 Joules", "isCorrect": true},
+            {"text": "10 Joules", "isCorrect": false},
+            {"text": "5 Joules", "isCorrect": false},
+            {"text": "15 Joules", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the potential energy of a 5 kg object raised to a height of 10 meters?",
+          "answers": [
+            {"text": "490 Joules", "isCorrect": true},
+            {"text": "500 Joules", "isCorrect": false},
+            {"text": "450 Joules", "isCorrect": false},
+            {"text": "400 Joules", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the formula for kinetic energy?",
+          "answers": [
+            {"text": "1/2 × mass × velocity^2", "isCorrect": true},
+            {"text": "mass × acceleration", "isCorrect": false},
+            {"text": "force × distance", "isCorrect": false},
+            {"text": "mass × gravity × height", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "What is the velocity of an object that travels 100 meters in 10 seconds?",
+          "answers": [
+            {"text": "10 m/s", "isCorrect": true},
+            {"text": "15 m/s", "isCorrect": false},
+            {"text": "20 m/s", "isCorrect": false},
+            {"text": "5 m/s", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "If two forces of 5 N and 10 N act in the same direction on an object, what is the resultant force?",
+          "answers": [
+            {"text": "15 N", "isCorrect": true},
+            {"text": "5 N", "isCorrect": false},
+            {"text": "10 N", "isCorrect": false},
+            {"text": "20 N", "isCorrect": false}
+          ]
+        }
+      ]
+    }
+  ]
+  
