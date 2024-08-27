@@ -10,6 +10,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+      },
+      keyframes: {
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+
+          
+        },
+
+        "shine-pulse": {
+            "0%": {
+              "background-position": "0% 0%",
+            },
+            "50%": {
+              "background-position": "100% 100%",
+            },
+            to: {
+              "background-position": "0% 0%",
+            },
+          },
+      },
       colors: {
         primary: "#3B82F6",
       },
@@ -42,7 +66,7 @@ module.exports = {
         },
         dark: {
           colors: {
-            background: "#000000",
+            background: "#070e22",
             foreground: "#ECEDEE",
             primary: {
               foreground: "#FFFFFF",

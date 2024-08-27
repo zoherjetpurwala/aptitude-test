@@ -91,13 +91,13 @@ export default function Dashboard() {
       </PageNavbar>
 
       <PageContent>
-        <div className="">
+        <div className="w-full">
           <h1 className="mb-6 text-2xl font-bold text-center">
             Available Exams:
           </h1>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {exams.map((exam) => (
-              <Card className="bg-opacity-80 backdrop-blur hover:shadow-2xl hover:shadow-primary-500/25">
+              <Card isBlurred className="border-none bg-background/50 dark:bg-default-100/10 hover:outline-primary">
                 <CardBody>
                   <div key={exam.id} className="p-6">
                     <h2 className="text-xl font-bold">{exam.title}</h2>
@@ -106,7 +106,7 @@ export default function Dashboard() {
                     <p className="mb-4">Price: ${exam.price}</p>
                     <Button
                       color="primary"
-                      variant="shadow"
+                      
                       onClick={() =>
                         handlePurchase(exam.id, exam.price, user.id)
                       }

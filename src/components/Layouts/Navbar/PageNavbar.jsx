@@ -46,7 +46,7 @@ function PageNavbar({ children }) {
 
   return (
     <div>
-      <div className="flex p-4 md:p-7 text-gray-500 justify-between items-center">
+      <div className="flex p-4 md:p-6 text-gray-500 justify-between items-center">
         {children}
 
         <button

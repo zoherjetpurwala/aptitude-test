@@ -15,8 +15,7 @@ html {
 html,
 body {
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  scrollbar-gutter: stable;
+
   width: 100vw;
 }
 
